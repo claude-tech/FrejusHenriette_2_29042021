@@ -1,0 +1,386 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+i {
+    color: #0065FC;
+}
+
+p {
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+
+/***********************************************************************conteneur haut droite**********************************************************/
+
+
+/***************s'inscrire/activité/hebergements****************/
+
+#conteneur1 {
+    display: flex;
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+a.button1 {
+    text-decoration: none;
+    text-indent: 10%;
+    margin-left: 4em;
+    color: black;
+}
+
+a.button1:hover {
+    color: blue;
+    border-top: 3px solid #0065FC;
+}
+
+
+/*a.button1:visited {
+    color: red;
+}*/
+
+h3 {
+    font-weight: 400;
+}
+
+div form p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 4em;
+}
+
+
+/*a:visited {
+    color: grey;
+}*/
+
+
+/********************************************************************conteneur ville/ recherche***************************************************************/
+
+#lieu {
+    background-color: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+    padding: 10px;
+    border-color: #DEEBFF;
+}
+
+i#lieu.fas.fa-map-marker-alt {
+    color: black;
+}
+
+#ville {
+    padding: 10px;
+}
+
+#conteneur2 {
+    display: flex;
+}
+
+button.recherche {
+    background-color: #0065FC;
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px;
+    color: white;
+}
+
+
+/*********************************************************filtres************************************************************************/
+
+
+/*******************bouton du filtre******************/
+
+i.fas.fa-money-bill-wave {
+    color: blue;
+    background-color: #DEEBFF;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+i.fas.fa-child {
+    color: blue;
+    background-color: #DEEBFF;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+i.fas.fa-heart {
+    color: blue;
+    background-color: #DEEBFF;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+i.fas.fa-dog {
+    color: blue;
+    background-color: #DEEBFF;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+i#info.fas.fa-info {
+    color: blue;
+    padding: 8px;
+    border-radius: 100%;
+}
+
+#info {
+    border: grey solid 0.5px;
+    margin-right: 4px;
+}
+
+p.filtre {
+    margin-right: 1em;
+    padding: 7px 7px 7px 0px;
+    margin: 1em;
+    align-self: center;
+}
+
+p.Economie {
+    border: solid 1px;
+    border-radius: 16px 16px 16px 16px;
+    margin: 1em;
+    align-self: center;
+}
+
+p.Famillial {
+    border: solid 1px;
+    border-radius: 16px 16px 16px 16px;
+    margin: 1em;
+}
+
+p.Romantique {
+    border: solid 1px;
+    border-radius: 16px 16px 16px 16px;
+    margin: 1em;
+    align-self: center;
+}
+
+p.Animaux {
+    border: solid 1px;
+    border-radius: 16px 16px 16px 16px;
+    margin: 1em;
+    align-self: center;
+}
+
+p.autorisées {
+    border: solid 1px;
+    border-radius: 16px 16px 16px 16px;
+    margin: 1em;
+    align-self: center;
+}
+
+a.button4 {
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.button4:hover {
+    color: #0065FC;
+}
+
+a.button5 {
+    text-decoration: none;
+    text-indent: 10%;
+    color: black;
+    padding: 10px;
+}
+
+a.button5:hover {
+    color: #0065FC;
+}
+
+
+/****************************************Hebergement à marseille*********************************************/
+
+#conteneur3 {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    height: 13em;
+    align-items: center;
+    margin-left: 3em;
+    margin-bottom: 1.5em;
+}
+
+.photo1 {
+    width: 200px;
+    height: 110px;
+    border-radius: 2em;
+    border-radius: 30px 30px 0px 0px;
+    margin: 4px;
+}
+
+div #auberge {
+    border-radius: 2em;
+    background-color: white;
+}
+
+div #port {
+    background-color: white;
+    border-radius: 2em;
+    margin-left: 2em;
+}
+
+div #mouettes {
+    background-color: white;
+    border-radius: 2em;
+    margin-left: 2em;
+}
+
+div #mer {
+    background-color: white;
+    border-radius: 2em;
+}
+
+div #panier {
+    background-color: white;
+    border-radius: 2em;
+    margin-left: 2em;
+}
+
+div #amina {
+    background-color: white;
+    border-radius: 2em;
+    margin-left: 2em;
+}
+
+div.hebergementm {
+    position: absolute;
+    background: #F2F2F2;
+    width: 53%;
+    /*50*/
+    height: 38em;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.marseille h2 {
+    padding-top: 1.2em;
+    padding-left: 1.5em;
+}
+
+.affiche {
+    /*padding-top: 1.5em;*/
+    padding-left: 2em;
+    color: black;
+}
+
+p.gauche {
+    padding-left: 1em;
+}
+
+
+/****************************************Les plus populaires *********************************************/
+
+
+/***********div à droite en haut**********/
+
+#conteneur4 {
+    position: absolute;
+    margin-left: 60%;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 13em;
+    align-items: left;
+    background: #F2F2F2;
+    width: 30%;
+    height: 38em;
+    border-radius: 15px 15px 15px 15px;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+i.fas.fa-chart-line {
+    margin-left: 40%;
+    color: black;
+}
+
+p.droite {
+    display: inline-block;
+    text-align: left;
+    position: absolute;
+    margin-left: 1em;
+}
+
+div #soleil {
+    background-color: white;
+    border-radius: 1em;
+    margin-top: 2em;
+    margin-right: 1.5em;
+}
+
+
+/*.droite1 {
+    display: inline-block;
+    margin-left: 1.2em
+}*/
+
+div #eau {
+    background-color: white;
+    border-radius: 1em;
+    margin-top: 2em;
+    margin-right: 1.5em;
+}
+
+div #bleub {
+    background-color: white;
+    border-radius: 1em;
+    margin-top: 2em;
+    margin-right: 1.5em;
+}
+
+img.photo2 {
+    width: 150px;
+    height: 120px;
+    border-radius: 2em;
+    border-radius: 15px 0px 0px 15px;
+    margin: 5px;
+}
+
+a.polulaire {
+    margin-top: 2em;
+}
+
+
+/*****************div Marseille et populaires cote a cote********************************/
+
+#conteneur4 #conteneur3 {
+    display: flex;
+}
+
+
+/*****************************************************************************************************************************************************/
+
+
+/******* les etoiles*******/
+
+i#last1.fas.fa-star {
+    color: #F2F2F2;
+}
+
+i#last2.fas.fa-star {
+    color: #F2F2F2;
+}
+
+i#last3.fas.fa-star {
+    color: #F2F2F2;
+}
+
+i#blast3.fas.fa-star {
+    color: #F2F2F2;
+}
+
+i#last4.fas.fa-star {
+    color: #F2F2F2;
+}
