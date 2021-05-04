@@ -215,6 +215,7 @@ div.hebergementm {
 .marseille h2 {
     padding-top: 1.2em;
     padding-left: 1.5em;
+    padding-bottom: 1em;
 }
 
 .affiche {
@@ -306,6 +307,12 @@ i#last4.fas.fa-star {
 
 /*********************************************/
 
+a.activitém {
+    position: absolute;
+    margin-top: 44%;
+    margin-left: 2em;
+}
+
 #conteneuractivite {
     margin-top: 50%;
     display: flex;
@@ -382,6 +389,7 @@ p#parcl {
     display: flex;
     background-color: #F2F2F2;
     margin-top: 6%;
+    padding: 1.5em;
 }
 
 div.noshebergements,
