@@ -1,5 +1,7 @@
 body {
     font-family: 'Raleway', sans-serif;
+    max-width: 1340px;
+    margin: auto;
 }
 
 i {
@@ -32,7 +34,7 @@ a.button1 {
     text-decoration: none;
     text-indent: 10%;
     margin-left: 4em;
-    color: black;
+    color: #0065FC;
 }
 
 a.button1:hover {
@@ -58,7 +60,7 @@ div form p {
     background-color: #F2F2F2;
     border-radius: 10px 0px 0px 10px;
     padding: 10px;
-    border-color: #DEEBFF;
+    border-color: #F2F2F2;
 }
 
 i#lieu.fas.fa-map-marker-alt {
@@ -67,6 +69,8 @@ i#lieu.fas.fa-map-marker-alt {
 
 #ville {
     padding: 10px;
+    border-style: double;
+    border-color: #F2F2F2;
 }
 
 #conteneur2 {
@@ -78,6 +82,11 @@ button.recherche {
     border-radius: 0px 10px 10px 0px;
     padding: 10px;
     color: white;
+    border-style: hidden;
+}
+
+.btn-recherche {
+    display: flex;
 }
 
 
@@ -89,28 +98,28 @@ button.recherche {
 i.fas.fa-money-bill-wave {
     color: blue;
     background-color: #DEEBFF;
-    padding: 10px;
+    padding: 9px;
     border-radius: 100%;
 }
 
 i.fas.fa-child {
     color: blue;
     background-color: #DEEBFF;
-    padding: 10px;
+    padding: 9px;
     border-radius: 100%;
 }
 
 i.fas.fa-heart {
     color: blue;
     background-color: #DEEBFF;
-    padding: 10px;
+    padding: 9px;
     border-radius: 100%;
 }
 
 i.fas.fa-dog {
     color: blue;
     background-color: #DEEBFF;
-    padding: 10px;
+    padding: 9px;
     border-radius: 100%;
 }
 
@@ -137,8 +146,9 @@ p.autorisées,
 .Romantique,
 .Famillial,
 .Economie {
-    border: solid 1px;
-    border-radius: 16px 16px 16px 16px;
+    border: solid 2px;
+    border-color: #F2F2F2;
+    border-radius: 20px 16px 16px 20px;
     margin: 1em;
     align-self: center;
 }
@@ -170,13 +180,17 @@ a.button5:hover {
 
 /****************************************Hebergement à marseille*********************************************/
 
+.hebergement_pluspopulaire {
+    display: flex;
+}
+
 #conteneur3 {
     display: flex;
     justify-content: flex-start;
     width: 50%;
     height: 13em;
     align-items: center;
-    margin-left: 3em;
+    margin-left: 2em;
     margin-bottom: 1.5em;
 }
 
@@ -186,6 +200,7 @@ a.button5:hover {
     border-radius: 2em;
     border-radius: 30px 30px 0px 0px;
     margin: 4px;
+    object-fit: cover;
 }
 
 div #auberge,
@@ -204,12 +219,11 @@ div #amina,
 }
 
 div.hebergementm {
-    position: absolute;
     background: #F2F2F2;
     width: 53%;
-    /*50*/
-    height: 38em;
+    height: 40em;
     border-radius: 15px 15px 15px 15px;
+    padding-right: 3em;
 }
 
 .marseille h2 {
@@ -219,7 +233,6 @@ div.hebergementm {
 }
 
 .affiche {
-    /*padding-top: 1.5em;*/
     padding-left: 2em;
     color: black;
 }
@@ -235,24 +248,20 @@ p.gauche {
 /***********div à droite en haut**********/
 
 #conteneur4 {
-    position: absolute;
-    margin-left: 60%;
     display: flex;
     flex-direction: column;
-    width: 40%;
-    height: 13em;
     align-items: left;
     background: #F2F2F2;
-    width: 30%;
-    height: 38em;
+    width: 35%;
+    height: 40em;
     border-radius: 15px 15px 15px 15px;
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: 2em;
+    margin-left: 4em;
 }
 
 i.fas.fa-chart-line {
-    margin-left: 40%;
     color: black;
+    margin-left: 8em
 }
 
 p.droite {
@@ -267,7 +276,7 @@ div #soleil,
 #eau {
     background-color: white;
     border-radius: 1em;
-    margin-top: 2em;
+    margin-top: 1em;
     margin-right: 1.5em;
 }
 
@@ -277,10 +286,12 @@ img.photo2 {
     border-radius: 2em;
     border-radius: 15px 0px 0px 15px;
     margin: 5px;
+    object-fit: cover;
 }
 
 a.polulaire {
     margin-top: 2em;
+    display: flex;
 }
 
 
@@ -307,14 +318,12 @@ i#last4.fas.fa-star {
 
 /*********************************************/
 
-a.activitém {
-    position: absolute;
-    margin-top: 44%;
-    margin-left: 2em;
+a.activitém h2 {
+    margin-left: 1.5em;
+    margin-top: 2em;
 }
 
 #conteneuractivite {
-    margin-top: 50%;
     display: flex;
     align-items: center;
 }
@@ -324,6 +333,7 @@ img.activite2 {
     width: 100%;
     height: 25em;
     border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
 }
 
 img.activite3,
@@ -333,6 +343,7 @@ img.activite7 {
     width: 100%;
     height: 10em;
     border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
 }
 
 div.calanques,
@@ -340,7 +351,6 @@ div.port {
     display: block;
     width: 25%;
     border-radius: 15px;
-    margin: 2em;
     box-shadow: 1px 3px;
     color: #F2F2F2;
 }
@@ -350,7 +360,7 @@ div.port {
     display: block;
     width: 25%;
     border-radius: 15px;
-    margin: 1em 3em 1em 3em
+    margin: 02em 3em 1em 3em
 }
 
 div.pomegues,
@@ -389,7 +399,7 @@ p#parcl {
     display: flex;
     background-color: #F2F2F2;
     margin-top: 6%;
-    padding: 1.5em;
+    padding: 1em 1em 0em 4em;
 }
 
 div.noshebergements,
