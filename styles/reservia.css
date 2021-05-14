@@ -2,6 +2,7 @@ body {
     font-family: 'Raleway', sans-serif;
     max-width: 1340px;
     margin: auto;
+    padding: 15px;
 }
 
 i {
@@ -22,25 +23,45 @@ h2 {
 
 /***************s'inscrire/activité/hebergements****************/
 
+#tittle {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    display: flex;
+}
+
+.btntop {
+    display: flex;
+    padding-right: 9px;
+}
+
+.btntop :active {
+    color: blue;
+    border-top: 3px solid #0065FC;
+}
+
 #conteneur1 {
     display: flex;
     flex-direction: row-reverse;
-    display: flex;
-    justify-content: flex-start;
     align-items: center;
 }
 
 a.button1 {
-    text-decoration: none;
-    text-indent: 10%;
-    margin-left: 4em;
     color: #0065FC;
 }
 
-a.button1:hover {
+
+/*a.button1:active {
     color: blue;
     border-top: 3px solid #0065FC;
-}
+}*/
+
+
+/*a.button1:visited {
+    color: grey;
+}*/
 
 h3 {
     font-weight: 400;
@@ -54,7 +75,7 @@ div form p {
 }
 
 
-/********************************************************************conteneur ville/ recherche***************************************************************/
+/********************************************************************conteneur ville: recherche***************************************************************/
 
 #lieu {
     background-color: #F2F2F2;
@@ -95,43 +116,39 @@ button.recherche {
 
 /*******************bouton du filtre******************/
 
-i.fas.fa-money-bill-wave {
-    color: blue;
-    background-color: #DEEBFF;
-    padding: 9px;
-    border-radius: 100%;
-}
-
-i.fas.fa-child {
-    color: blue;
-    background-color: #DEEBFF;
-    padding: 9px;
-    border-radius: 100%;
-}
-
-i.fas.fa-heart {
-    color: blue;
-    background-color: #DEEBFF;
-    padding: 9px;
-    border-radius: 100%;
-}
-
+i.fas.fa-money-bill-wave,
+i.fas.fa-child,
+i.fas.fa-heart,
 i.fas.fa-dog {
     color: blue;
     background-color: #DEEBFF;
     padding: 9px;
     border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 i#info.fas.fa-info {
     color: blue;
-    padding: 8px;
     border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #info {
-    border: grey solid 0.5px;
+    border: #F2F2F2 solid 3px;
     margin-right: 4px;
+}
+
+p.btninfo {
+    display: flex;
+    align-items: baseline;
 }
 
 p.filtre {
@@ -146,11 +163,19 @@ p.autorisées,
 .Romantique,
 .Famillial,
 .Economie {
-    border: solid 2px;
+    /*border: solid 1px;
     border-color: #F2F2F2;
-    border-radius: 20px 16px 16px 20px;
+    border-radius: 20px;
+    margin: 1em;
+    align-self: center;*/
+    border: solid 3px;
+    border-color: #F2F2F2;
+    border-radius: 100px;
     margin: 1em;
     align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
 }
 
 a.button4 {
@@ -167,10 +192,10 @@ a.button4:hover {
 }
 
 a.button5 {
-    text-decoration: none;
-    text-indent: 10%;
+    /*text-decoration: none;*/
     color: black;
     padding: 10px;
+    display: flex;
 }
 
 a.button5:hover {
@@ -182,64 +207,76 @@ a.button5:hover {
 
 .hebergement_pluspopulaire {
     display: flex;
+    justify-content: space-around;
 }
 
 #conteneur3 {
     display: flex;
     justify-content: flex-start;
-    width: 50%;
-    height: 13em;
-    align-items: center;
+    width: auto;
+    justify-content: space-between;
+    /*height: 13em;*/
+    /*align-items: center;
     margin-left: 2em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5em;*/
 }
 
 .photo1 {
-    width: 200px;
+    /*width: 200px;
     height: 110px;
-    border-radius: 2em;
+    border-radius: 2em;*/
     border-radius: 30px 30px 0px 0px;
-    margin: 4px;
+    /*margin: 4px;*/
     object-fit: cover;
-}
-
-div #auberge,
-#mer {
-    border-radius: 2em;
-    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 div #amina,
 #panier,
 #mouettes,
-#port {
+#port,
+#mer,
+#auberge {
     background-color: white;
     border-radius: 2em;
-    margin-left: 2em;
+    display: flex;
+    border: solid white 5px;
+    margin: 10px;
 }
 
 div.hebergementm {
     background: #F2F2F2;
-    width: 53%;
-    height: 40em;
-    border-radius: 15px 15px 15px 15px;
-    padding-right: 3em;
+    width: 55%;
+    /*height: 40em;*/
+    border-radius: 15px;
+    /*padding-right: 3em;*/
+    display: flex;
+    /* align-items: stretch;
+    flex-wrap: wrap;*/
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .marseille h2 {
-    padding-top: 1.2em;
-    padding-left: 1.5em;
-    padding-bottom: 1em;
+    display: flex;
+}
+
+a.marseille {
+    display: flex;
 }
 
 .affiche {
-    padding-left: 2em;
+    /*padding-left: 2em;*/
     color: black;
+    display: flex;
+    margin: 10px;
 }
 
-p.gauche {
+
+/*p.gauche {
     padding-left: 1em;
-}
+}*/
 
 
 /****************************************Les plus populaires *********************************************/
@@ -250,48 +287,61 @@ p.gauche {
 #conteneur4 {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    /*align-items: left;*/
     background: #F2F2F2;
-    width: 35%;
-    height: 40em;
-    border-radius: 15px 15px 15px 15px;
-    padding-left: 2em;
-    margin-left: 4em;
+    width: 30%;
+    /*height: 40em;*/
+    border-radius: 15px;
+    /*padding-left: 2em;
+    margin-left: 4em;*/
 }
 
 i.fas.fa-chart-line {
     color: black;
-    margin-left: 8em
 }
 
 p.droite {
     display: inline-block;
-    text-align: left;
-    position: absolute;
+    /*text-align: left;*/
+    /*position: absolute;*/
     margin-left: 1em;
 }
 
 div #soleil,
 #bleub,
 #eau {
-    background-color: white;
-    border-radius: 1em;
+    display: flex;
+    padding: 8px;
+    /*background-color: white;*/
+    /* border-radius: 1em;
     margin-top: 1em;
-    margin-right: 1.5em;
+    margin-right: 1.5em;*/
 }
 
 img.photo2 {
-    width: 150px;
-    height: 120px;
-    border-radius: 2em;
+    /*width: auto;*/
+    /*height: 120px;
+    border-radius: 2em;*/
     border-radius: 15px 0px 0px 15px;
-    margin: 5px;
+    /*margin: 5px;*/
     object-fit: cover;
+    display: flex;
+    /******/
+    display: flex;
 }
 
 a.polulaire {
-    margin-top: 2em;
+    /*margin-top: 2em;*/
     display: flex;
+}
+
+a.btnpopulaire {
+    display: flex;
+    align-items: center;
+    /******/
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
 }
 
 
@@ -351,7 +401,7 @@ div.port {
     display: block;
     width: 25%;
     border-radius: 15px;
-    box-shadow: 1px 3px;
+    box-shadow: 10px 13px 10px;
     color: #F2F2F2;
 }
 
@@ -369,7 +419,7 @@ div.notredame,
 div.longchamp {
     height: 45%;
     border-radius: 15px;
-    box-shadow: 1px 3px;
+    box-shadow: 10px 13px 10px;
     color: #F2F2F2;
 }
 
