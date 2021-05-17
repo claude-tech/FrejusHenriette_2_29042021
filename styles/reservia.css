@@ -2,7 +2,7 @@ body {
     font-family: 'Raleway', sans-serif;
     max-width: 1340px;
     margin: auto;
-    padding: 15px;
+    padding: 25px;
 }
 
 i {
@@ -51,6 +51,8 @@ h2 {
 .active {
     border-top: blue solid 2px;
     padding-top: 1.5em;
+    width: 8em;
+    padding-left: 1em;
 }
 
 a.button1 {
