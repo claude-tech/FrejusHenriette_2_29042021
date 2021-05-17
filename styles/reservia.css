@@ -45,11 +45,12 @@ h2 {
 #conteneur1 {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
+    align-items: baseline;
 }
 
 .active {
     border-top: blue solid 2px;
+    padding-top: 1.5em;
 }
 
 a.button1 {
