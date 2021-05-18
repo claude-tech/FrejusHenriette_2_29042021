@@ -2,7 +2,6 @@ body {
     font-family: 'Raleway', sans-serif;
     max-width: 1340px;
     margin: auto;
-    padding: 25px;
 }
 
 i {
@@ -205,8 +204,9 @@ a.button5:hover {
 
 #conteneur3 {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     width: auto;
+    margin-bottom: 20px;
 }
 
 .photo1 {
@@ -220,13 +220,12 @@ div #amina,
 #panier,
 #mouettes,
 #port,
-#mer,
-#auberge {
+#auberge,
+#mer {
     background-color: white;
     border-radius: 2em;
     display: flex;
     border: solid white 5px;
-    margin: 10px;
     width: 31%;
     /*ombre*/
     box-shadow: 10px 13px 10px;
@@ -244,7 +243,7 @@ div.hebergementm {
 }
 
 .marseille h2 {
-    display: flex;
+    margin-top: 0;
 }
 
 a.marseille {
@@ -270,11 +269,12 @@ a.marseille {
     width: 30%;
     border-radius: 15px;
     padding: 30px;
+    justify-content: space-between;
 }
 
 i.fas.fa-chart-line {
     color: black;
-    margin-left: 6em;
+    margin-left: 5em;
 }
 
 p.droite {
@@ -285,11 +285,11 @@ p.droite {
 div #soleil,
 #bleub,
 #eau {
-    display: flex;
+    display: block;
     padding: 15px;
     object-fit: cover;
     box-sizing: border-box;
-    height: 30%;
+    height: 26%;
 }
 
 img.photo2 {
@@ -303,6 +303,10 @@ a.polulaire {
     display: flex;
 }
 
+a.polulaire h2 {
+    margin-left: 1em;
+}
+
 a.btnpopulaire {
     display: flex;
     align-items: center;
@@ -313,6 +317,7 @@ a.btnpopulaire {
     height: 100%;
     box-shadow: 10px 13px 10px;
     color: rgb(224, 224, 224);
+    box-sizing: border-box;
 }
 
 
@@ -340,13 +345,16 @@ i#last4.fas.fa-star {
 /*********************************************/
 
 a.activitém h2 {
-    margin-left: 1.5em;
     margin-top: 2em;
+}
+
+#conteneuractivite a {
+    display: block;
 }
 
 #conteneuractivite {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
 
 img.activite5,
@@ -370,7 +378,7 @@ img.activite7 {
 div.calanques,
 div.port {
     display: block;
-    width: 25%;
+    width: 23%;
     border-radius: 15px;
     box-shadow: 10px 13px 10px;
     color: #F2F2F2;
@@ -378,10 +386,13 @@ div.port {
 
 #bloc4,
 #bloc2 {
-    display: block;
-    width: 25%;
+    /* display: block;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 23%;
     border-radius: 15px;
-    margin: 02em 3em 1em 3em
+    /*margin: 02em 3em 1em 3em*/
 }
 
 div.pomegues,
@@ -395,22 +406,12 @@ div.longchamp {
 }
 
 p#fort,
-p#notred {
-    margin-bottom: 3em;
-    margin-left: 2em;
-    padding-bottom: 7px;
-}
-
-p#mer,
+p#notred,
+p#vieuxport,
 p#iles,
 p#parc,
 p#parcl {
     margin-left: 2em;
-}
-
-p#iles,
-p#parcl {
-    padding-bottom: 5px;
 }
 
 
@@ -426,4 +427,42 @@ p#parcl {
 div.noshebergements,
 div.apropos {
     width: 30%
+}
+
+
+/****************mediaqueries***********************/
+
+@media screen and (max-width:1280px) {
+    .hebergement_pluspopulaire {
+        flex-direction: column;
+    }
+    div.hebergementm {
+        width: auto;
+    }
+    #conteneur4 {
+        display: inline;
+        width: initial;
+        margin-top: 2em;
+    }
+    i.fas.fa-chart-line {
+        margin-left: 17em;
+    }
+    a.btnpopulaire {
+        height: auto;
+    }
+    div #soleil,
+    #bleub,
+    #eau {
+        display: flex;
+    }
+    p.filtre {
+        margin: 5px;
+    }
+    p.autorisées,
+    .Animaux,
+    .Romantique,
+    .Famillial,
+    .Economie {
+        margin: 3px;
+    }
 }
