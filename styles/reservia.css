@@ -361,7 +361,7 @@ img.activite5,
 img.activite2 {
     width: 100%;
     height: 25em;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 30px 30px 0px 0px;
     object-fit: cover;
 }
 
@@ -371,7 +371,7 @@ img.activite6,
 img.activite7 {
     width: 100%;
     height: 10em;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 30px 30px 0px 0px;
     object-fit: cover;
 }
 
@@ -386,13 +386,11 @@ div.port {
 
 #bloc4,
 #bloc2 {
-    /* display: block;*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 23%;
     border-radius: 15px;
-    /*margin: 02em 3em 1em 3em*/
 }
 
 div.pomegues,
@@ -464,5 +462,122 @@ div.apropos {
     .Famillial,
     .Economie {
         margin: 3px;
+    }
+}
+
+@media screen and (max-width:667px) {
+    .active {
+        border-bottom: blue solid 2px;
+        padding-bottom: 1em;
+        margin-top: 2em;
+        border-top: none;
+    }
+    article {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    /**************btnrecherche*****************/
+    .btn-recherche {
+        justify-content: center;
+        margin-bottom: 4em;
+    }
+    /****************filtre******************/
+    #conteneur2 {
+        flex-wrap: wrap;
+        margin-left: 3px;
+    }
+    p.filtre {
+        position: absolute;
+        margin-bottom: 13em;
+    }
+    /**********bouton info********/
+    p.btninfo {
+        margin-left: 15px;
+        margin-right: 2px;
+    }
+    /*************conteneru3 et 4***************/
+    .hebergement_pluspopulaire {
+        flex-direction: column-reverse;
+    }
+    /***************hebergementmarseille*******************/
+    .marseille h2 {
+        margin-top: 1.5em;
+        margin-left: 20px;
+    }
+    div.hebergementm {
+        padding: 10px;
+        background-color: white;
+    }
+    #conteneur3 {
+        flex-direction: column;
+        margin-bottom: 0;
+        align-items: center;
+    }
+    div #amina,
+    #panier,
+    #mouettes,
+    #port,
+    #auberge,
+    #mer {
+        width: 90%;
+        margin-bottom: 2em;
+    }
+    /***********les plus polulaire********************/
+    #conteneur4 {
+        padding: 15px;
+        border-radius: 0;
+    }
+    i.fas.fa-chart-line {
+        margin-left: 3.5em;
+    }
+    a.polulaire h2 {
+        margin-left: 0;
+    }
+    div #soleil,
+    #bleub,
+    #eau {
+        padding: 0;
+        margin-bottom: 2em;
+    }
+    /**********activités à marseille*********/
+    a.activitém h2 {
+        margin-left: 1em;
+    }
+    div.calanques,
+    div.port,
+    div.pomegues,
+    div.frouil,
+    div.notredame,
+    div.longchamp,
+    #bloc4,
+    #bloc2 {
+        width: 95%;
+        margin-bottom: 2em;
+        /*  align-items: center;*/
+    }
+    img.activite3,
+    img.activite4,
+    img.activite6,
+    img.activite7,
+    img.activite5,
+    img.activite2 {
+        height: 150px;
+    }
+    img.active5,
+    img.active2 {
+        width: 90%;
+    }
+    #conteneuractivite {
+        flex-direction: column;
+        align-items: center;
+    }
+    /*******footer******/
+    #foot {
+        flex-direction: column;
+        padding: 1em;
+    }
+    div.noshebergements,
+    div.apropos {
+        width: auto;
     }
 }
