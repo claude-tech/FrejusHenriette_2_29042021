@@ -345,7 +345,7 @@ i#last4.fas.fa-star {
 
 /*********************************************/
 
-a.activitém h2 {
+h2.activitém {
     margin-top: 2em;
 }
 
@@ -573,7 +573,7 @@ div.apropos {
         margin-bottom: 2em;
     }
     /**********activités à marseille*********/
-    a.activitém h2 {
+    h2.activitém {
         margin-left: 1em;
     }
     div.calanques,
