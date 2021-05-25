@@ -43,7 +43,6 @@ h2 {
 
 #conteneur1 {
     display: flex;
-    flex-direction: row-reverse;
     align-items: baseline;
 }
 
@@ -431,6 +430,10 @@ div.apropos {
 /****************mediaqueries***********************/
 
 @media screen and (max-width:1280px) {
+    body {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
     .hebergement_pluspopulaire {
         flex-direction: column;
     }
@@ -443,7 +446,7 @@ div.apropos {
         margin-top: 2em;
     }
     i.fas.fa-chart-line {
-        margin-left: 17em;
+        margin-left: 15em;
     }
     a.btnpopulaire {
         height: auto;
@@ -466,20 +469,46 @@ div.apropos {
 }
 
 @media screen and (max-width:667px) {
+    body {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
     .active {
         border-bottom: blue solid 2px;
         padding-bottom: 1em;
         margin-top: 2em;
         border-top: none;
+        width: 100%;
+        padding-left: initial;
+        padding-top: initial;
     }
-    article {
-        padding-left: 5px;
-        padding-right: 5px;
+    .btntop.inscrire {
+        position: absolute;
+        top: 17px;
+        padding: 0;
+        right: 16px;
+        width: initial;
+    }
+    .btntop {
+        padding: 0;
+        width: 50%;
+        justify-content: center;
+        text-align: center;
+    }
+    #conteneur1 {
+        margin-left: -16px;
+        margin-right: -16px;
     }
     /**************btnrecherche*****************/
     .btn-recherche {
         justify-content: center;
         margin-bottom: 4em;
+    }
+    article h2 {
+        font-size: 1.3em;
+    }
+    #tittle {
+        flex-direction: column;
     }
     /****************filtre******************/
     #conteneur2 {
@@ -500,9 +529,9 @@ div.apropos {
         flex-direction: column-reverse;
     }
     /***************hebergementmarseille*******************/
-    .marseille h2 {
-        margin-top: 1.5em;
-        margin-left: 20px;
+    .marseille {
+        width: max-content;
+        margin-top: 2em;
     }
     div.hebergementm {
         padding: 10px;
@@ -519,13 +548,15 @@ div.apropos {
     #port,
     #auberge,
     #mer {
-        width: 90%;
+        width: 100%;
         margin-bottom: 2em;
     }
     /***********les plus polulaire********************/
     #conteneur4 {
         padding: 15px;
         border-radius: 0;
+        margin-left: -16px;
+        margin-right: -16px;
     }
     i.fas.fa-chart-line {
         margin-left: 3.5em;
@@ -551,9 +582,12 @@ div.apropos {
     div.longchamp,
     #bloc4,
     #bloc2 {
-        width: 95%;
+        width: 100%;
         margin-bottom: 2em;
-        /*  align-items: center;*/
+    }
+    div.calanques,
+    div.port {
+        box-shadow: 10px 23px 10px;
     }
     img.activite3,
     img.activite4,
@@ -575,6 +609,8 @@ div.apropos {
     #foot {
         flex-direction: column;
         padding: 1em;
+        margin-left: -16px;
+        margin-right: -16px;
     }
     div.noshebergements,
     div.apropos {
