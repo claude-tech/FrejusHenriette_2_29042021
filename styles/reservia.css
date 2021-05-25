@@ -201,7 +201,7 @@ a.button5:hover {
     justify-content: space-between;
 }
 
-#conteneur3 {
+.conteneur3 {
     display: flex;
     justify-content: space-between;
     width: auto;
@@ -322,7 +322,7 @@ a.btnpopulaire {
 
 /*****************div Marseille et populaires cote a cote********************************/
 
-#conteneur4 #conteneur3 {
+#conteneur4 .conteneur3 {
     display: flex;
 }
 
@@ -334,6 +334,8 @@ a.btnpopulaire {
 
 i#last1.fas.fa-star,
 i#last2.fas.fa-star,
+i#last2-1.fas.fa-star,
+i#last2-2.fas.fa-star,
 i#last3.fas.fa-star,
 i#blast3.fas.fa-star,
 i#last4.fas.fa-star {
@@ -423,7 +425,7 @@ p#parcl {
 
 div.noshebergements,
 div.apropos {
-    width: 30%
+    width: 35%
 }
 
 
@@ -537,7 +539,7 @@ div.apropos {
         padding: 10px;
         background-color: white;
     }
-    #conteneur3 {
+    .conteneur3 {
         flex-direction: column;
         margin-bottom: 0;
         align-items: center;
