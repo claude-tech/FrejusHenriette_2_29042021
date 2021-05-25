@@ -74,7 +74,7 @@ div form p {
 #lieu {
     background-color: #F2F2F2;
     border-radius: 10px 0px 0px 10px;
-    padding: 10px;
+    padding: 15px;
     border-color: #F2F2F2;
 }
 
@@ -511,23 +511,20 @@ div.apropos {
         margin-bottom: 4em;
     }
     button.recherche {
-        background-color: #0065FC;
         border-radius: 10px 10px 10px 10px;
-        border-style: hidden;
-        color: transparent;
         width: 40px;
-        height: 40px;
+    }
+    .search {
+        display: none;
     }
     #ville {
         width: 194px;
+        border-right: 0;
     }
     i.fas.fa-search {
         color: blue;
         display: flex;
         justify-content: center;
-        align-items: center;
-        margin-top: -3px;
-        margin-left: -3px;
     }
     article h2 {
         font-size: 1.3em;
