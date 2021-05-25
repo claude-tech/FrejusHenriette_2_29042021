@@ -231,7 +231,7 @@ div #amina,
     color: rgb(224, 224, 224);
 }
 
-div.hebergementm {
+section.hebergementm {
     background: #F2F2F2;
     width: 55%;
     padding: 30px;
@@ -439,7 +439,7 @@ div.apropos {
     .hebergement_pluspopulaire {
         flex-direction: column;
     }
-    div.hebergementm {
+    section.hebergementm {
         width: auto;
     }
     #conteneur4 {
@@ -535,7 +535,7 @@ div.apropos {
         width: max-content;
         margin-top: 2em;
     }
-    div.hebergementm {
+    section.hebergementm {
         padding: 10px;
         background-color: white;
     }
