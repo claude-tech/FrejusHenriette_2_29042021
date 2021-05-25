@@ -78,6 +78,10 @@ div form p {
     border-color: #F2F2F2;
 }
 
+i.fas.fa-search {
+    display: none;
+}
+
 i#lieu.fas.fa-map-marker-alt {
     color: black;
 }
@@ -505,6 +509,25 @@ div.apropos {
     .btn-recherche {
         justify-content: center;
         margin-bottom: 4em;
+    }
+    button.recherche {
+        background-color: #0065FC;
+        border-radius: 10px 10px 10px 10px;
+        border-style: hidden;
+        color: transparent;
+        width: 40px;
+        height: 40px;
+    }
+    #ville {
+        width: 194px;
+    }
+    i.fas.fa-search {
+        color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -3px;
+        margin-left: -3px;
     }
     article h2 {
         font-size: 1.3em;
