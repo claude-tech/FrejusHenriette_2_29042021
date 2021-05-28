@@ -1,4 +1,4 @@
-body {
+    body {
     font-family: 'Raleway', sans-serif;
     max-width: 1340px;
     margin: auto;
@@ -457,6 +457,9 @@ div.apropos {
     a.btnpopulaire {
         height: auto;
     }
+    a.button5 {
+        padding: 3px;
+    }
     div #soleil,
     #bleub,
     #eau {
@@ -472,170 +475,176 @@ div.apropos {
     .Economie {
         margin: 3px;
     }
-}
-
-@media screen and (max-width:667px) {
-    body {
-        padding-left: 16px;
-        padding-right: 16px;
+    p#fort,
+    p#notred,
+    p#vieuxport,
+    p#iles,
+    p#parc,
+    p#parcl {
+        margin-left: 0em;
     }
-    .active {
-        border-bottom: blue solid 2px;
-        padding-bottom: 1em;
-        margin-top: 2em;
-        border-top: none;
-        width: 100%;
-        padding-left: initial;
-        padding-top: initial;
+    @media screen and (max-width:667px) {
+        body {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        .active {
+            border-bottom: blue solid 2px;
+            padding-bottom: 1em;
+            margin-top: 2em;
+            border-top: none;
+            width: 100%;
+            padding-left: initial;
+            padding-top: initial;
+        }
+        .btntop.inscrire {
+            position: absolute;
+            top: 17px;
+            padding: 0;
+            right: 16px;
+            width: initial;
+        }
+        .btntop {
+            padding: 0;
+            width: 50%;
+            justify-content: center;
+            text-align: center;
+        }
+        #conteneur1 {
+            margin-left: -16px;
+            margin-right: -16px;
+        }
+        /**************btnrecherche*****************/
+        .btn-recherche {
+            justify-content: center;
+            margin-bottom: 4em;
+        }
+        button.recherche {
+            border-radius: 10px 10px 10px 10px;
+            width: 40px;
+        }
+        .search {
+            display: none;
+        }
+        #ville {
+            width: 194px;
+            border-right: 0;
+        }
+        i.fas.fa-search {
+            color: blue;
+            display: flex;
+            justify-content: center;
+        }
+        article h2 {
+            font-size: 1.3em;
+        }
+        #tittle {
+            flex-direction: column;
+        }
+        /****************filtre******************/
+        #conteneur2 {
+            flex-wrap: wrap;
+            margin-left: 3px;
+        }
+        p.filtre {
+            position: absolute;
+            margin-bottom: 13em;
+        }
+        /**********bouton info********/
+        p.btninfo {
+            margin-left: 15px;
+            margin-right: 2px;
+        }
+        /*************conteneru3 et 4***************/
+        .hebergement_pluspopulaire {
+            flex-direction: column-reverse;
+        }
+        /***************hebergementmarseille*******************/
+        .marseille {
+            width: max-content;
+            margin-top: 2em;
+        }
+        section.hebergementm {
+            padding: 10px;
+            background-color: white;
+        }
+        .conteneur3 {
+            flex-direction: column;
+            margin-bottom: 0;
+            align-items: center;
+        }
+        div #amina,
+        #panier,
+        #mouettes,
+        #port,
+        #auberge,
+        #mer {
+            width: 100%;
+            margin-bottom: 2em;
+        }
+        /***********les plus polulaire********************/
+        #conteneur4 {
+            padding: 15px;
+            border-radius: 0;
+            margin-left: -16px;
+            margin-right: -16px;
+        }
+        i.fas.fa-chart-line {
+            margin-left: 3.5em;
+        }
+        a.polulaire h2 {
+            margin-left: 0;
+        }
+        div #soleil,
+        #bleub,
+        #eau {
+            padding: 0;
+            margin-bottom: 2em;
+        }
+        /**********activités à marseille*********/
+        h2.activitém {
+            margin-left: 1em;
+        }
+        div.calanques,
+        div.port,
+        div.pomegues,
+        div.frouil,
+        div.notredame,
+        div.longchamp,
+        #bloc4,
+        #bloc2 {
+            width: 100%;
+            margin-bottom: 2em;
+        }
+        div.calanques,
+        div.port {
+            box-shadow: 10px 23px 10px;
+        }
+        img.activite3,
+        img.activite4,
+        img.activite6,
+        img.activite7,
+        img.activite5,
+        img.activite2 {
+            height: 150px;
+        }
+        img.active5,
+        img.active2 {
+            width: 90%;
+        }
+        #conteneuractivite {
+            flex-direction: column;
+            align-items: center;
+        }
+        /*******footer******/
+        #foot {
+            flex-direction: column;
+            padding: 1em;
+            margin-left: -16px;
+            margin-right: -16px;
+        }
+        div.noshebergements,
+        div.apropos {
+            width: auto;
+        }
     }
-    .btntop.inscrire {
-        position: absolute;
-        top: 17px;
-        padding: 0;
-        right: 16px;
-        width: initial;
-    }
-    .btntop {
-        padding: 0;
-        width: 50%;
-        justify-content: center;
-        text-align: center;
-    }
-    #conteneur1 {
-        margin-left: -16px;
-        margin-right: -16px;
-    }
-    /**************btnrecherche*****************/
-    .btn-recherche {
-        justify-content: center;
-        margin-bottom: 4em;
-    }
-    button.recherche {
-        border-radius: 10px 10px 10px 10px;
-        width: 40px;
-    }
-    .search {
-        display: none;
-    }
-    #ville {
-        width: 194px;
-        border-right: 0;
-    }
-    i.fas.fa-search {
-        color: blue;
-        display: flex;
-        justify-content: center;
-    }
-    article h2 {
-        font-size: 1.3em;
-    }
-    #tittle {
-        flex-direction: column;
-    }
-    /****************filtre******************/
-    #conteneur2 {
-        flex-wrap: wrap;
-        margin-left: 3px;
-    }
-    p.filtre {
-        position: absolute;
-        margin-bottom: 13em;
-    }
-    /**********bouton info********/
-    p.btninfo {
-        margin-left: 15px;
-        margin-right: 2px;
-    }
-    /*************conteneru3 et 4***************/
-    .hebergement_pluspopulaire {
-        flex-direction: column-reverse;
-    }
-    /***************hebergementmarseille*******************/
-    .marseille {
-        width: max-content;
-        margin-top: 2em;
-    }
-    section.hebergementm {
-        padding: 10px;
-        background-color: white;
-    }
-    .conteneur3 {
-        flex-direction: column;
-        margin-bottom: 0;
-        align-items: center;
-    }
-    div #amina,
-    #panier,
-    #mouettes,
-    #port,
-    #auberge,
-    #mer {
-        width: 100%;
-        margin-bottom: 2em;
-    }
-    /***********les plus polulaire********************/
-    #conteneur4 {
-        padding: 15px;
-        border-radius: 0;
-        margin-left: -16px;
-        margin-right: -16px;
-    }
-    i.fas.fa-chart-line {
-        margin-left: 3.5em;
-    }
-    a.polulaire h2 {
-        margin-left: 0;
-    }
-    div #soleil,
-    #bleub,
-    #eau {
-        padding: 0;
-        margin-bottom: 2em;
-    }
-    /**********activités à marseille*********/
-    h2.activitém {
-        margin-left: 1em;
-    }
-    div.calanques,
-    div.port,
-    div.pomegues,
-    div.frouil,
-    div.notredame,
-    div.longchamp,
-    #bloc4,
-    #bloc2 {
-        width: 100%;
-        margin-bottom: 2em;
-    }
-    div.calanques,
-    div.port {
-        box-shadow: 10px 23px 10px;
-    }
-    img.activite3,
-    img.activite4,
-    img.activite6,
-    img.activite7,
-    img.activite5,
-    img.activite2 {
-        height: 150px;
-    }
-    img.active5,
-    img.active2 {
-        width: 90%;
-    }
-    #conteneuractivite {
-        flex-direction: column;
-        align-items: center;
-    }
-    /*******footer******/
-    #foot {
-        flex-direction: column;
-        padding: 1em;
-        margin-left: -16px;
-        margin-right: -16px;
-    }
-    div.noshebergements,
-    div.apropos {
-        width: auto;
-    }
-}
