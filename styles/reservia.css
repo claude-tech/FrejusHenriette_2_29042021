@@ -272,8 +272,6 @@
         div #soleil,
         #bleub,
         #eau {
-            /*display: block;*/
-            /* padding: 15px;*/
             object-fit: cover;
             box-sizing: border-box;
             height: 26%;
@@ -292,7 +290,6 @@
         }
         
         a.polulaire h2 {
-            /*margin-left: 1em;*/
             display: flex;
             justify-content: space-between;
             width: 100%;
@@ -428,9 +425,6 @@
                 width: initial;
                 margin-top: 2em;
             }
-            /*i.fas.fa-chart-line {
-                margin-left: 15em;
-            }*/
             a.btnpopulaire {
                 height: auto;
             }
@@ -495,7 +489,6 @@
             }
             /**************btnrecherche*****************/
             .btn-recherche {
-                /* justify-content: center;*/
                 margin-bottom: 4em;
             }
             button.recherche {
