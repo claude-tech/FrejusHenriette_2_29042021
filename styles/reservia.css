@@ -223,6 +223,15 @@
             color: rgb(224, 224, 224);
         }
         
+        div #amina a,
+        #panier a,
+        #mouettes a,
+        #port a,
+        #auberge a,
+        #mer a {
+            width: 100%;
+        }
+        
         section.hebergementm {
             background: #F2F2F2;
             width: 55%;
